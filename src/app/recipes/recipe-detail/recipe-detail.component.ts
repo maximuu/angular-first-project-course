@@ -8,10 +8,13 @@ import { Recipe } from '../recipe.model';
 })
 export class RecipeDetailComponent implements OnInit {
   @Input() recipe: Recipe;
+  // toggleIsOpen = false
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  // toggleOpen() {
+  //   this.toggleIsOpen = !this.toggleIsOpen
+  // }
 }

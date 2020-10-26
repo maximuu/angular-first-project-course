@@ -14,8 +14,23 @@
 </div>
 <div class="row">
     <div class="col-xs-12">
-        <div class="btn-group">
-            <button type="button" class="btn btn-primary dropdown-toggle">
+        <!-- <div [ngClass]="{open: toggleIsOpen == true}" class="btn-group">
+            <button 
+            (click)="toggleOpen()" 
+            type="button" 
+            class="btn btn-primary dropdown-toggle">
+                Manage Recipe <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Shopping List</a></li>
+                <li><a href="#">Edit Recipe </a></li>
+                <li><a href="#">Delete Recipe </a></li>
+            </ul>
+        </div> -->
+        <div class="btn-group"
+        appDropdown>
+            <button 
+            class="btn btn-primary dropdown-toggle">
                 Manage Recipe <span class="caret"></span>
             </button>
             <ul class="dropdown-menu">
